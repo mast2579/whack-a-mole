@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Whack-A-Mole</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+
+<body>
+  <main>
+
+    <header>
+      <h1>Whack-A-Mole</h1>
+      <button id="StartButton" role="button">Start</button>
+      <button id="StopButton" role="button">Stop</button>
+      <button id="ResetButton" role="button">Reset</button>
+    </header>
+
+    <div class="scoreboard">
+      <span class="time">Time: <span id="TimeDisplay">:60</span></span>
+      <span class="score">Score: <span id="ScoreDisplay">0</span></span>
+    </div>
+
+    <div class="container">
+      <!-- example of visually hidden for display but used for screen readers -->
+      <!-- leaving the default outline for accessibility -->
+      <button role="button" class="hole"><span class="visually-hidden">hole 1</span></button>
+      <button role="button" class="hole"><span class="visually-hidden">hole 2</span></button>
+      <button role="button" class="hole"><span class="visually-hidden">hole 3</span></button>
+      <button role="button" class="hole"><span class="visually-hidden">hole 4</span></button>
+      <button role="button" class="hole"><span class="visually-hidden">hole 5</span></button>
+      <button role="button" class="hole"><span class="visually-hidden">hole 6</span></button>
+      <button role="button" class="hole"><span class="visually-hidden">hole 7</span></button>
+      <button role="button" class="hole"><span class="visually-hidden">hole 8</span></button>
+      <button role="button" class="hole"><span class="visually-hidden">hole 9</span></button>
+    </div>
+
+  </main>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

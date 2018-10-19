@@ -1,0 +1,88 @@
+main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Arial';
+}
+
+.container {
+  width: 340px;
+  height: 340px;
+  margin: 0 auto;
+  padding: 5px;
+  overflow: hidden;
+  display: flex; /* flex partially supported in ie11 but works in this case */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header {
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
+header h1 {
+  font-size: 40px;
+  line-height: 30px;
+}
+
+header button {
+  text-transform: uppercase;
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+}
+
+.scoreboard {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.scoreboard .score,
+.scoreboard .time {
+  padding: 0 20px;
+  font-family: 'Arial';
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #666;
+}
+
+.scoreboard .score span,
+.scoreboard .time span {
+  font-size: 40px;
+  color: #333;
+}
+
+.hole {
+  display: block;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #666;
+  cursor: grab;
+  border: none;
+  position: relative;
+}
+
+.hole:active {
+  backround: #000;
+}
+
+.hole.active1,
+.hole.active2 {
+  background: #f00;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: 100%;
+  display: block;
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+}
